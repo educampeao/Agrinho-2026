@@ -3,69 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Se você for adicionar um arquivo CSS -->
+    <meta name="description" content="AgroSustentável - Soluções inovadoras para uma agricultura mais verde e eficiente">
+    <title>AgroSustentável | Agricultura do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Agro Forte, Futuro Sustentável</h1>
-        <nav>
-            <ul>
-                <li><a href="#producao">Produção Agrícola</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-                <li><a href="#desafios">Desafios Ambientais</a></li>
-                <li><a href="#solucoes">Soluções e Futuro</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Agro<span class="highlight">Sustentável</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#praticas" class="nav-link">Práticas</a></li>
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Bem-vindo ao nosso site</h2>
-            <p>Descubra como o agronegócio pode crescer economicamente sem comprometer os recursos naturais das futuras gerações.</p>
-            <img src="imagem-impacto.jpg" alt="Imagem de Agricultura Sustentável">
-        </section>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Cultivando o <span class="highlight">futuro</span> com responsabilidade
+            </h1>
+            <p class="hero-subtitle">
+                Soluções inteligentes para uma agricultura que respeita o meio ambiente, 
+                valoriza o produtor e alimenta o mundo de forma sustentável.
+            </p>
+            <div class="hero-buttons">
+                <a href="#praticas" class="btn btn-primary">Conheça as práticas</a>
+                <a href="#contato" class="btn btn-secondary">Fale conosco</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
 
-        <section id="producao">
-            <h2>Produção Agrícola</h2>
-            <p>Aqui você encontrará dados sobre o crescimento do agronegócio e as tecnologias utilizadas.</p>
-        </section>
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre nós</span>
+                <h2 class="section-title">O que é a agricultura sustentável?</h2>
+                <p class="section-description">
+                    Um modelo que une produtividade, preservação ambiental e justiça social.
+                </p>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Preservação Ambiental</h3>
+                    <p>Uso consciente dos recursos naturais, protegendo solos, água e biodiversidade para as próximas gerações.</p>
+                </div>
+                <div class="sobre-card">
+                    <div class="card-icon">💡</div>
+                    <h3>Inovação Tecnológica</h3>
+                    <p>Aplicação de tecnologias como IoT, drones e inteligência artificial para otimizar a produção rural.</p>
+                </div>
+                <div class="sobre-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Justiça Social</h3>
+                    <p>Valorização do trabalhador rural e apoio à agricultura familiar, garantindo renda digna no campo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="sustentabilidade">
-            <h2>Sustentabilidade</h2>
-            <p>Práticas ecológicas e conservação do solo são fundamentais para o futuro.</p>
-        </section>
+    <!-- PRÁTICAS -->
+    <section class="section praticas" id="praticas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Práticas</span>
+                <h2 class="section-title">Técnicas que transformam o campo</h2>
+            </div>
+            <div class="praticas-grid">
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Plantio Direto</h3>
+                        <p>Técnica que preserva a estrutura do solo, reduz erosão e aumenta a retenção de água.</p>
+                    </div>
+                </article>
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Rotação de Culturas</h3>
+                        <p>Alternância de espécies que melhora a fertilidade do solo e reduz pragas naturalmente.</p>
+                    </div>
+                </article>
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Irrigação Inteligente</h3>
+                        <p>Sistemas automatizados que economizam água e entregam a quantidade ideal para cada cultura.</p>
+                    </div>
+                </article>
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Agrofloresta</h3>
+                        <p>Integração de árvores, culturas e animais em um mesmo espaço, imitando a natureza.</p>
+                    </div>
+                </article>
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Controle Biológico</h3>
+                        <p>Uso de inimigos naturais no combate a pragas, reduzindo o uso de agrotóxicos.</p>
+                    </div>
+                </article>
+                <article class="pratica-card">
+                    <div class="pratica-img" style="background-image: url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600');"></div>
+                    <div class="pratica-content">
+                        <h3>Energia Solar Rural</h3>
+                        <p>Painéis fotovoltaicos para irrigação, cercas elétricas e processamento de alimentos.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-        <section id="desafios">
-            <h2>Desafios Ambientais</h2>
-            <p>Conheça os problemas atuais e suas consequências.</p>
-        </section>
+    <!-- BENEFÍCIOS (com contador) -->
+    <section class="section beneficios" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Impacto</span>
+                <h2 class="section-title">Números que fazem a diferença</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-suffix">%</div>
+                    <p>Economia de água com irrigação inteligente</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-suffix">%</div>
+                    <p>Redução no uso de agrotóxicos</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-suffix">%</div>
+                    <p>Aumento da produtividade a longo prazo</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-suffix">%</div>
+                    <p>Preservação do solo para o futuro</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="solucoes">
-            <h2>Soluções e Futuro</h2>
-            <p>Inovações que podem transformar o agronegócio para melhor.</p>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                
-                <button type="submit">Enviar</button>
+    <!-- CONTATO -->
+    <section class="section contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contato</span>
+                <h2 class="section-title">Vamos cultivar juntos?</h2>
+                <p class="section-description">
+                    Entre em contato e descubra como podemos ajudar sua propriedade a ser mais sustentável.
+                </p>
+            </div>
+            <form class="contato-form" id="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                <div class="form-feedback" id="form-feedback"></div>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>🌱 AgroSustentável</h4>
+                <p>Construindo um futuro onde o campo e a natureza prosperam juntos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#praticas">Práticas</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>📧 contato@agrosustentavel.com.br</p>
+                <p>📞 (11) 99999-9999</p>
+                <p>📍 São Paulo, Brasil</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
